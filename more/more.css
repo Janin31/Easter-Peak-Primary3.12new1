@@ -1,0 +1,364 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Sora", sans-serif;
+  font-family: "Gabarito", sans-serif;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.nav_top {
+  width: 100%;
+  height: 160px;
+  font-family: "Sora", sans-serif;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+}
+
+.nav_top .holder {
+  width: 100%;
+  height: 50px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.nav_top .holder .left {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_top .holder .left .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.nav_top .holder .left .contact h3 {
+  padding-left: 10px;
+}
+
+.nav_top .holder .left .mail {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+  padding-left: 70px;
+}
+
+.nav_top .holder .left .mail i {
+  padding-right: 10px;
+}
+
+.nav_top .holder .right {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 15px;
+  color: black;
+}
+
+.nav_top .holder .right i {
+  color: black;
+}
+
+hr {
+  width: 90%;
+  margin-left: 80px;
+}
+
+.nav {
+  width: 100%;
+  height: 120px;
+  padding-top: 10px;
+  font-family: "Sora", sans-serif;
+}
+
+.nav .holder {
+  width: 95%;
+  height: 80px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+
+  background: white;
+}
+
+.nav .holder .left {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav .holder .left .slogan {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.nav .holder .right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.nav .holder .right a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav .holder .right a:hover {
+  color: blue;
+}
+
+.section-a {
+  width: 100%;
+  height: 600px;
+  padding-top: 10px;
+}
+
+.section-a .holder {
+  width: 95%;
+  height: 530px;
+}
+.section-a .holder h3 {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+
+.section-a .holder .wrapper {
+  width: 90%;
+  height: 400px;
+  transition: transform 1ms;
+}
+
+.section-a .holder .wrapper table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid blue;
+  margin-left: 70px;
+}
+
+.section-a .holder .wrapper table {
+  width: 100%;
+}
+
+.section-a .holder .wrapper table th {
+  height: 70px;
+  font-size: 30px;
+}
+
+.section-a .holder .wrapper table,
+td {
+  font-size: 20px;
+  padding: 8px 15px;
+}
+
+.section-b {
+  width: 100%;
+  height: 500px;
+  background-color: lightgray;
+}
+
+.section-b .holder {
+  width: 95%;
+  height: 450px;
+  padding: 50px;
+}
+
+.section-b .holder h2 {
+  width: 100%;
+  height: 30px;
+  font-size: 43px;
+  color: blue;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-b .holder .wrapper {
+  width: 95%;
+  height: 300px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.section-b .holder .wrapper h3 {
+  font-size: 40px;
+  color: black;
+  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-left: 37px;
+}
+
+.section-b .holder .wrapper .left {
+  width: 38%;
+  border: 2px solid black;
+  padding-left: 50px;
+}
+
+.section-b .holder .wrapper .left .wrapper_day h4 {
+  font-size: 26px;
+  padding-left: 50px;
+  padding-bottom: 17px;
+}
+
+.section-b .holder .wrapper .left .wrapper_day .wrapper_time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.section-b .holder .wrapper .right {
+  width: 38%;
+  border: 2px solid black;
+  padding-left: 50px;
+}
+
+.section-b .holder .wrapper .right .wrapper_day h4 {
+  font-size: 26px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.section-b .holder .wrapper .right .wrapper_day .wrapper_time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.section-c {
+  width: 100%;
+}
+
+.section-c .holder {
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.section-c .holder .left {
+  width: 100%;
+}
+.section-c .holder .left img {
+  width: 100%;
+}
+
+.section-c .holder .right {
+  width: 40%;
+}
+.section-c .holder .right .wrapper {
+  width: 400px;
+  margin: 20px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.section-c .holder .right .wrapper .peach {
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  background-color: #efa984;
+}
+
+.section-c .holder .right .wrapper .blue {
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  background-color: #166eb5;
+}
+
+.section-c .holder .right .wrapper .yellow {
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  background-color: #eff537;
+}
+
+.section-c .holder .right .wrapper h3 {
+  text-decoration-line: underline;
+  font-size: 23px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.section-c .holder .right ul {
+  padding-top: 10px;
+  padding-left: 100px;
+  font-size: 17px;
+  list-style: square;
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: blue;
+}
+
+.footer .holder {
+  width: 95%;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .holder .left {
+  width: 45%;
+  height: 100px;
+  padding-left: 230px;
+}
+
+.footer .holder .left img {
+  width: 170px;
+  height: 170px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.footer .holder .right {
+  width: 45%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 40px;
+}
+
+.footer .holder .right h2 {
+  padding-bottom: 30px;
+}
+
+.footer .holder .right .contact {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .holder .right .contact h3 {
+  padding-left: 20px;
+}

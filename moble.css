@@ -1,0 +1,23 @@
+@media screen and (max-width: 450px) {
+  
+.nav_top{
+display: none;
+}
+
+hr{
+  display: none;
+}
+
+.nav .holder .left{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}
+.nav .holder .left .slogan{
+  padding-left: 110px;
+ margin-bottom: 300px;
+ }
+
+    
+}

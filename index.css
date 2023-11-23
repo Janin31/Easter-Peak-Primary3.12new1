@@ -1,0 +1,497 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Sora", sans-serif;
+  font-family: "Gabarito", sans-serif;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.nav_top {
+  width: 100%;
+  height: 160px;
+  font-family: "Sora", sans-serif;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+}
+
+.nav_top .holder {
+  width: 100%;
+  height: 50px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.nav_top .holder .left {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_top .holder .left .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.nav_top .holder .left .contact h3 {
+  padding-left: 10px;
+}
+
+.nav_top .holder .left .mail {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+  padding-left: 70px;
+}
+
+.nav_top .holder .left .mail i {
+  padding-right: 10px;
+}
+
+.nav_top .holder .right {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 15px;
+  color: black;
+  cursor: pointer;
+}
+
+.nav_top .holder .right i {
+  color: black;
+}
+
+hr {
+  width: 90%;
+  margin-left: 80px;
+}
+
+.nav {
+  width: 100%;
+  height: 120px;
+  padding-top: 10px;
+  font-family: "Sora", sans-serif;
+}
+
+.nav .holder {
+  width: 95%;
+  height: 80px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+
+  background: white;
+}
+
+.nav .holder .left {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav .holder .left .slogan {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.nav .holder .right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 30px;
+}
+
+.nav .holder .right a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav .holder .right a:hover {
+  color: blue;
+}
+
+.home {
+  width: 100%;
+  height: 650px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(112, 165, 183, 0.383),
+      rgb(142, 198, 217)
+    ),
+    url(img/The-Grove-Primary-2-0066-e1539946572733.jpg);
+  background-size: fill;
+  background: position y -150px;
+  background-position-x: -360px;
+  padding-top: 100px;
+}
+
+.home .holder {
+  width: 95%;
+  height: 500px;
+  padding-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .holder .section-a {
+  width: 75%;
+  padding-left: 30px;
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home .holder .section-a h2 {
+  font-family: Gabarito;
+  font-weight: 500;
+  font-size: 45px;
+  margin-left: 30px;
+  padding-bottom: 50px;
+  animation: moveInRight 1s ease-out;
+}
+
+.home .holder .section-a .moto {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
+.home .holder .section-a h3 {
+  font-family: Sora;
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 170px;
+  animation: moveInLeft 1s ease-out;
+}
+
+.home .holder .section-a h1 {
+  font-family: Gabarito;
+  font-weight: 500;
+  font-size: 35px;
+  padding-bottom: 70px;
+  padding-left: 5px;
+  animation: moveInbottom 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInbottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.home .holder .section-a a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: blue;
+  background-color: white;
+  margin-left: 250px;
+}
+
+.home .holder .section-a a:hover {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+}
+
+.home .section-b {
+  width: 100%;
+  height: 500px;
+}
+
+.home .section-b .holder {
+  width: 95%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.home .section-b .holder h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.home .section-b .holder h2 {
+  font-size: 35px;
+  padding-bottom: 25px;
+  color: blue;
+}
+
+.home .section-b .holder p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.home .section-b .holder a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 25px;
+  border: 1px solid blue;
+  border-radius: 30px;
+  color: white;
+  background-color: blue;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.home .section-b .holder a:hover {
+  background-color: #85b6d4;
+  color: white;
+  border: 1px solid #85b6d4;
+}
+
+.home .section-c {
+  width: 100%;
+  height: 900px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 1, 0.351),
+      rgba(0, 0, 0, 0.327)
+    ),
+    url("img/staff1.jpg");
+  background-size: cover;
+}
+
+.home .section-c .holder {
+  width: 100%;
+  height: 200px;
+}
+
+.home .section-c .holder h2 {
+  width: 100%;
+  height: 100px;
+  font-size: 35px;
+  color: white;
+  margin-left: 370px;
+  margin-top: 300px;
+}
+
+.home .section-c .team {
+  width: 100%;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.home .section-c .team .left {
+  width: 80%;
+  color: white;
+}
+
+.home .section-c .team .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.home .section-c .team .left p {
+  width: 500px;
+  line-height: 2;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.home .section-c .team .right {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .section-c .team .right .anker {
+  font-size: 20px;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid blue;
+  color: white;
+  background-color: blue;
+}
+
+.home .section-c .team .right .anker:hover {
+  background-color: #85b6d4;
+  color: white;
+  border: 1px solid #85b6d4;
+}
+
+.section-d {
+  width: 100%;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.section-d .holder {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-d .holder h2 {
+  width: 100%;
+  font-size: 35px;
+  padding-left: 350px;
+  padding-top: 50px;
+}
+
+.section-d .holder .extra {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+.section-d .holder .extra .left {
+  width: 35%;
+  height: 300px;
+  padding-right: 70px;
+}
+.section-d .holder .extra .left img {
+  width: 420px;
+  height: 300px;
+}
+
+.section-d .holder .extra .right {
+  width: 50%;
+  height: 300px;
+  padding-top: 30px;
+}
+
+.section-d .holder .extra .right p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-left: 100px;
+  padding-bottom: 30px;
+}
+
+.section-d .holder .extra .right a {
+  width: 13%;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 10px;
+  border: 1px solid blue;
+  border-radius: 30px;
+  color: white;
+  background-color: blue;
+  margin-left: 90px;
+}
+
+.section-d .holder .extra a:hover {
+  background-color: #85b6d4;
+  color: white;
+  border: 1px solid #85b6d4;
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: blue;
+}
+
+.footer .holder {
+  width: 95%;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .holder .left {
+  width: 45%;
+  height: 100px;
+  padding-right: 150px;
+}
+
+.footer .holder .left img {
+  width: 170px;
+  height: 170px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.footer .holder .right {
+  width: 45%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 40px;
+}
+
+.footer .holder .right h2 {
+  padding-bottom: 30px;
+}
+
+.footer .holder .right .contact {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .holder .right .contact h3 {
+  padding-left: 20px;
+}
